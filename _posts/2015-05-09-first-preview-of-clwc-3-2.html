@@ -1,0 +1,24 @@
+---
+layout: post
+published: true
+title: First preview of CLWC 3.2
+date: '2015-05-09 22:34:09 +0000'
+categories: [Blog, News]
+tags: [preview, 3.2, gif speed, apk install]
+thumbnail:
+image:
+permalink: /news/:title/
+---
+<p>It's time to show you a preview of the second release in the 3.x series of CLWC. We have two new and improved features for you as well as two bug fixes.</p>
+<p><!--more--></p>
+<p><img class="alignnone wp-image-613 size-full" src="/assets/images/content/post-2015-05-09-first-preview-of-clwc-3-2-img-1.png" alt="CLWC 3.2 Preview 1 - Animated GIF Render Speed" width="548" height="233" /></p>
+<p>The first feature is the ability to alter the animated GIF's speed, so you can slow down or speed up the animation.</p>
+<p>You'll notice the two new options at the bottom. The first one determines how often a frame is draw on screen, for example if set to 1000 (note: this is milliseconds), it will draw a frame every second. If set to 0, it will draw as fast as possible (depends on how powerful your phone is).</p>
+<p>The second option determines which frame to draw. As the GIF is treated as a video clip internally therefore it has a duration so setting this to 100 means that the frame at intervals, 0, 100, 200, 300, 400 ... up until the end of the clip is rendered.</p>
+<p>Please note that these options are currently experimental so if you set a too high frame interval i.e. one that is longer than the duration of the GIF file or you set an invalid value such as "-1" or "abc" then the Live Wallpaper may not build or will crash when run.</p>
+<p><img class="alignnone size-medium wp-image-614" src="/assets/images/content/post-2015-05-09-first-preview-of-clwc-3-2-img-2.png" alt="CLWC 3.2 Preview 1 - APK Installation" width="300" height="287" /></p>
+<p>The second (new?) feature is that we have redesigned the APK installation tool to be better than before. Not only does it now use the CLWC 3.0 design but it also lets you install multiple APK files at once. It even keeps you updated showing you which file it is currently installing onto your mobile device.</p>
+<p>&nbsp;</p>
+<p>We've also fixed two bugs, one where incorrectly labelled the Signing Key icon, "LWP" on the Settings modal and another&nbsp;where certain non-English characters would cause the Live Wallpapers to fail to build (thank you марина for informing us of this).</p>
+<p>Head on over to our&nbsp;<a href="{{ site.baseurl }}/next-release-preview/">Download</a> page to try out CLWC 3.2 Preview 1.</p>
+<p>We look forward to hearing your feedback, especially in regards to the two new features mentioned above.</p>

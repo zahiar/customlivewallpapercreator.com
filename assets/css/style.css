@@ -1,0 +1,206 @@
+/*
+Theme Name: Heavenly - CLWC Modified
+Description: Heavenly child theme
+Author: CLWC
+Template: heavenly-1.2.0
+Version: 1.2.0
+*/
+
+@import '//fonts.googleapis.com/css?family=Roboto:300';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h1,h2,h3,h4 {
+    font-family: 'Roboto', sans-serif;
+}
+.edenfresh-bs-services h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-area {
+    border-bottom: 1px solid #89BA30;
+}
+
+.navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav>.active>a:focus {
+    background-color: #94C43C;
+}
+
+.nav-collapse.collapse {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 979px) {
+    .navbar .brand {
+        margin: 20px 0 -4px -5px;
+    }
+}
+
+.open > a,
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a,
+.current-menu-parent > a,
+.current-menu-item > a,
+.current-menu-ancestor > a,
+.dropdown-menu > a:focus,
+.dropdown-menu > a:hover{
+    background: #94C43C !important;
+    color: #ffffff;
+}
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret,
+.navbar .nav li.dropdown:hover > .dropdown-toggle .caret {
+    border-top-color: #999999;
+    border-bottom-color: #999999;
+}
+.navbar .nav li.dropdown.active > .dropdown-toggle > a .caret,
+.navbar .nav li.dropdown.active:hover > .dropdown-toggle > a .caret{
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.box.widget h3 span {
+    border-bottom: 2px solid #89BA30;
+}
+
+.sidebar a:hover, a.btn-link:hover, a:hover {
+    color: #89ba30;
+    text-decoration: none;
+}
+
+.btn-info {
+    background-color: #94C43C;
+}
+.btn-info:hover {
+    background-color: #89BA30;
+}
+
+
+blockquote {
+    border-left-color: #94C43C !important;
+    border-left-width: 3px !important;
+}
+
+blockquote.borderless {
+    border-left:none;
+}
+
+.sidebar a:hover,
+a.btn-link:hover,
+a:hover{
+    color: #89BA30;
+    text-decoration: none;
+}
+
+.tagcloud a {
+    background: none;
+}
+
+.footer {
+    width: 100%;
+    color: #fff;
+    background: #444444;
+    border-top:5px solid #ddd;
+    margin-top:20px;
+}
+.footer *{
+    color: #fff;
+}
+
+.footer .content{
+    padding: 10px;
+    color: #fff;
+}
+
+.footer .header{
+    margin-left: 20px;
+}
+
+.footer .content *{
+    color: #fff;
+}
+
+.footer .content span {
+    display: block;
+}
+
+.footer .content .fcred {
+    font-size: 10px;
+}
+
+.footer .content img.shakese-logo {
+    height: 40px;
+    vertical-align: middle;
+    border: 0;
+}
+
+.footer .bottom {
+    margin-top:20px;
+    border-top: 1px solid #555555;
+    background: #222222;
+}
+
+.social-media-links li {
+    display: inline;
+    margin: 18px;
+    border: none;
+}
+
+.btn-download {
+    background-image: url(/assets/images/download-icon.png) !important;
+    background-repeat: no-repeat;
+    background-position: 7px !important;
+    padding-left: 60px;
+}
+
+.download-info-box {
+    width:auto !important;
+    margin-left: 10% !important;
+}
+.download-info-box span.large-text {
+    font-size: 25pt;
+}
+
+.sidebar {
+    border: none;
+}
+
+.header-area {
+    margin-top: -20px;
+}
+
+.header-banner .heading {
+    padding-top: 20%;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35pt;
+}
+.header-banner .heading .break {
+    display: block;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
+.header-banner .subheading {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13pt;
+}
+
+.mx_comments .author-box {
+    width: 30px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="{{ page.tags | join: ',' }}">
+
+    {% if page.url == "/" %}
+        <title>{{ page.title }}</title>
+    {% elsif page.url == "/index.html" %}
+        <title>{{ page.title }}</title>
+    {% else %}
+        <title>{{ page.title }} | {{ site.name }}</title>
+    {% endif %}
+
+    {% seo title=false %}
+
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <link rel="stylesheet" id="parent-style-css" href="{{ site.baseurl }}/assets/css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" id="child-style-css" href="{{ site.baseurl }}/assets/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="qtip-two-css-css" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" type="text/css" media="all">
+
+    <script src="{{ site.baseurl }}/assets/js/jquery-1.12.4.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/site.js"></script>
+
+    {% include google_analytics.html %}
+</head>
+
+<body class="{{ layout.body_class }}">
+    <div class="navbar-wrapper">
+        <div class="nav-area">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar-inner clean">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                        <a class="brand" href="{{ site.baseurl }}/">
+                            <img src="{{ site.baseurl }}/assets/images/logo.png" title="{{ site.name }}" alt="{{ site.name }}" width="160" height="30">
+                        </a>
+
+                        <div class="nav-collapse collapse">
+                            <ul id="menu-menu" class="nav">
+                                <li id="menu-item-about" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="{{ site.baseurl}}/about/">About</a>
+                                </li>
+                                <li id="menu-item-blog" class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                                    <a href="{{ site.baseurl}}/category/blog/">Blog</a>
+                                </li>
+                                <li id="menu-item-download" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="{{ site.baseurl}}/download/">Download</a>
+                                </li>
+                                <li id="menu-item-support" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown">
+                                    <a href="{{ site.baseurl}}/support/" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown-submenu">
+                                            <a href="{{ site.baseurl}}/support/getting-started/">Getting Started</a>
+
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a href="{{ site.baseurl}}/support/getting-started/installing-clwc/">Installing CLWC</a>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a href="{{ site.baseurl}}/support/getting-started/running-clwc-for-the-first-time/">Running CLWC for the First Time</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown-submenu">
+                                            <a href="{{ site.baseurl}}/support/tutorials/">Tutorials</a>
+
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a href="{{ site.baseurl}}/support/tutorials/exporting-live-wallpaper-source-code/">Exporting Live Wallpaper Source Code</a>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                    <a href="{{ site.baseurl}}/support/tutorials/installing-an-apk-file-onto-your-phone/">Installing an APK file onto your phone</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="{{ site.baseurl}}/support/faqs/">FAQs</a>
+                                        </li>
+
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="{{ site.baseurl}}/support/troubleshooting/">Troubleshooting</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-contact-us" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="{{ site.baseurl}}/support/contact-us/">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

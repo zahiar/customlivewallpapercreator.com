@@ -1,0 +1,31 @@
+---
+layout: post
+published: true
+title: 'CLWC 3.3 preview: new orientation feature'
+date: '2015-12-31 01:53:51 +0000'
+categories: [Blog, News]
+tags: [3.3, orientation, auto-rotate, autorotate, portrait, landscape]
+thumbnail:
+image:
+permalink: /news/:title/
+---
+<p>We've just put up the first preview of the upcoming CLWC 3.3 which adds support for the much&nbsp;requested orientation feature.</p>
+<p><!--more--></p>
+<p>Yes, you read that correctly. All Live Wallpapers will now correctly display when the device is rotated and you can even lock the orientation so no matter how you rotate your device, the image will always display in the chosen orientation.</p>
+<p><img class="alignnone size-full wp-image-687" src="/assets/images/content/post-2015-12-31-clwc-3-3-preview-new-orientation-feature-img-1.png" alt="Shake LWP Orientation Feature Preview" width="275" height="77" /></p>
+<p>This new feature is currently only supported by the Shake Live Wallpaper (more on why later) and each of the following option works like so:</p>
+<ul>
+<li>Auto-rotate - as you rotate your device, the Live Wallpaper will be rescaled and rotated to match the orientation</li>
+<li>Portrait only - as you rotate your device, the Live Wallpaper will not rotate and will remain in portrait&nbsp;view</li>
+<li>Landscape only - as you rotate your device, the Live Wallpaper will not rotate and will remain in landscape view</li>
+</ul>
+<p>&nbsp;</p>
+<p>The reason why this is only supported by the Shake Live Wallpaper is because a lot of internal changes had to be made in order to support this feature. We couldn't simply add one line of code to lock the orientation because Google doesn't support that yet for Live Wallpapers so we had to get creative. When you rotate your device, the actual screen will rotate as that is what the Android operating system does however, we now detect whether screen has rotated and do some magic to make sure the Live Wallpaper displays correctly.</p>
+<p>&nbsp;</p>
+<p>By magic, we simply check if you have chosen to lock the orientation and if so, we simply rescale and rotate the image to match the locked orientation.</p>
+<p>For example, if you chose the 'Portrait only' orientation lock, then when you rotate your device landscape, we simply rotate the image back to portrait view and then display it on screen. This is all done silently behind-the-scenes so when the screen has finished rotating the Live Wallpaper will display correctly, and you won't notice that it's been rotated :).</p>
+<p>&nbsp;</p>
+<p>We do intend to add this feature to all the other Live Wallpapers, and the Animated GIF and Matrix Live Wallpapers will probably be the most difficult ones to do. But hey, who doesn't like a challenge now and then?</p>
+<p>Anyway, it would good of you guys to try this new feature out and let us know how you get on with it so that we can iron out any issues before roll this feature out to the other Live Wallpapers.<br />
+Please note that not all devices rotate their home screens, we found that only our Nexus 7 did but not our Nexus 5.</p>
+<p>As always, you can download the&nbsp;<a href="{{ site.baseurl }}/next-release-preview/">preview version of CLWC here</a>.</p>

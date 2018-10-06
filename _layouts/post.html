@@ -1,0 +1,48 @@
+---
+layout: default
+body_class: post-template-default single single-post single-format-standard
+---
+<div class="container">
+    <div class="row-fluid">
+        <div class="span8">
+            <div class="post type-post status-publish format-standard has-post-thumbnail hentry ">
+                <div class="post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <div class="breadcrumb">
+                        Posted on {{ page.date | date_to_string }} / Posted by kr8ter
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <h1 class="entry-title">{{ page.title }}</h1>
+                    <div class="entry-content">
+                        {% if page.image %}
+                            <img src="{{ page.image }}" class="attachment-edenfresh-responsive-post-thumb size-edenfresh-responsive-post-thumb wp-post-image" alt="{{ page.title }}">
+                        {% endif %}
+
+                        {{ page.content }}
+                    </div>
+
+                    <div class="well tags">
+                        <b><span>Post Tags</span><div class="spc"></div></b>
+
+                        {% for tag in page.tags %}
+                            {{ tag }}
+                        {% endfor %}
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="mx_comments">
+                    {% include disqus-comments.html %}
+                </div>
+            </div>
+        </div>
+
+        <div class="span4">
+            <div class="sidebar">
+                {% include sidebar.html %}
+            </div>
+        </div>
+    </div>
+</div>

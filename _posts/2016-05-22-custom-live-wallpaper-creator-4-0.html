@@ -1,0 +1,24 @@
+---
+layout: post
+published: true
+title: Custom Live Wallpaper Creator 4.0
+date: '2016-05-22 15:37:19 +0000'
+categories: [Blog, Releases]
+tags: [video live wallpaper, video, 4, 4.0, clwc 4, clwc 4.0, gradle, ant]
+thumbnail: /assets/images/content/post-2016-05-22-custom-live-wallpaper-creator-4-0-img-1.jpg
+image: /assets/images/content/post-2016-05-22-custom-live-wallpaper-creator-4-0-img-1.jpg
+permalink: /releases/:title/
+---
+<p>After many months of work (&amp; testing), CLWC 4.0 is finally here with support for Video Live Wallpapers.</p>
+<p><!--more--></p>
+<p>The biggest focus in CLWC 4.0 was adding support for Video Live Wallpapers (which was something that&nbsp;a lot of people wanted) and reworking the Live Wallpaper build system so we use Gradle instead of ANT.</p>
+<p>A lot of testing has gone into this (&amp; thanks to everyone who helped!) and we hope that the new build system is far more reliable than the one before. One thing to note about this new build system is that when you run it for the first time, it will download the Gradle system along with its dependencies which will be around 40-50MB. This is a one-off download so the first Live Wallpaper you build will take longer than usual, but after that they should be pretty quick.&nbsp;We decided against bundling the Gradle build system with CLWC as&nbsp;not only does it make the install file a lot bigger but it is a one-off download so once you've done the initial download, after that you won&rsquo;t have to download it again.</p>
+<p>So here's a list of changes made in CLWC 4.0 (list may be small but these are pretty big changes :)):</p>
+<ul>
+<li>Add support for Video Live Wallpaper</li>
+<li>Replace previous ANT build system with a Gradle based one</li>
+<li>Update Android SDK to the latest version</li>
+</ul>
+<p>&nbsp;</p>
+<p>As ever, the new version can be found on our <a href="{{ site.baseurl }}/download">Download</a>&nbsp;page. And if you are upgrading from an older version then we'd recommend you to uninstall that first prior to installing this one.</p>
+<p>Any feedback you have would be greatly appreciated.</p>

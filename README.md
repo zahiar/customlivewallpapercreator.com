@@ -1,2 +1,0 @@
-# clwc
-CLWC Website

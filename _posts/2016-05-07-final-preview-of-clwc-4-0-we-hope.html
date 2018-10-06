@@ -1,0 +1,25 @@
+---
+layout: post
+published: true
+title: Final preview of CLWC 4.0 - we hope!
+date: '2016-05-07 20:56:00 +0000'
+categories: [Blog, News]
+tags: [video live wallpaper, video, 4.0, clwc 4.0, gradle, clwc]
+thumbnail:
+image:
+permalink: /news/:title/
+---
+<p>We've just put up what we hope will be the final preview of CLWC 4.0 before we release it officially.</p>
+<p><!--more--></p>
+<p>We've received a lot of good feedback from you guys which helped us tweak and refine the Video Live Wallpaper amongst other things. Some of you may not know this, but we did put out quite a few preview versions despite not writing a blog entry for each. So here's a summary of all the changes that have been made so far:</p>
+<ul>
+<li>Support for Video Live Wallpaper - scaling should work and so should the preview (the third-party library we are using to get an image from the MP4 video file doesn't seem to work with all MP4 files, so sometimes you may see the default place holder displayed in the preview as opposed to a screenshot from the selected video).</li>
+<li>Migrated everything over to the new Gradle build system - when exporting the Live Wallpaper source code, we'd recommend you import the project using Android Studio as that's probably the easiest and best option)</li>
+<li>Updated Android SDK and build tools</li>
+</ul>
+<p>&nbsp;</p>
+<p>Another thing to note about the Gradle build system is that when you build a Live Wallpaper for the first time, it will download the Gradle build system and various dependencies (around 40-50 MB), so your first Live Wallpaper build will take a bit longer but after that it should be pretty quick. We decided against bundling the Gradle build system with CLWC as&nbsp;not only does it make the install file a lot bigger but it is a one-off download so once you've done the initial download, after that you won't have to download it again.</p>
+<p>Hopefully if all goes well with this preview, then we'll release it officially&nbsp;within the next week or two. If not, then we'll keep you updated.</p>
+<p>&nbsp;</p>
+<p>Anyway, <a href="{{ site.baseurl }}/next-release-preview/">give the final preview a try</a> and let us know how you get on.</p>
+<p>Thanks!</p>

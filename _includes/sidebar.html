@@ -1,0 +1,26 @@
+<div class="box widget box_yellow">
+    <h3><span>Search</span></h3>
+
+    <form role="search" method="get" id="searchform" class="searchform" action="{{ site.baseurl }}/search.html">
+        <div>
+            <input type="text" value="" name="s" id="s">
+            <input type="submit" id="searchsubmit" value="Search" class="btn btn-info">
+        </div>
+    </form>
+</div>
+
+<div class="box widget box_yellow">
+    <h3><span>Categories</span></h3>
+
+    <ul>
+        <li class="cat-item">
+            <a href="{{ site.baseurl }}/category/blog/">Blog</a>
+        </li>
+        <li class="cat-item">
+            <a href="{{ site.baseurl }}/category/news/">News</a>
+        </li>
+        <li class="cat-item">
+            <a href="{{ site.baseurl }}/category/releases/">Releases</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,19 @@
+---
+layout: post
+published: true
+title: 'CLWC 3.3 preview 2: Rotate Live Wallpaper fixed'
+date: '2016-01-10 19:00:24 +0000'
+categories: [Blog, News]
+tags: []
+thumbnail:
+image:
+permalink: /news/:title/
+---
+<p>We just released CLWC 3.3 preview 2. And&nbsp;naturally the new orientation feature is supported by more (not all) Live Wallpapers and we've also reworked the Rotate Live Wallpaper&nbsp;to get rid of the ugly black background&nbsp;that appeared when the image rotated.</p>
+<p><!--more--></p>
+<p>Rotate, Slideshow and Refresher Live Wallpapers all now support the new orientation feature and in addition, when you rotate your device, they won't break any more. We are still working on brining support for this feature to the Animated GIF and Matrix Live Wallpapers.</p>
+<p>And during our tests, we noticed that the Shake Live Wallpaper was still using the device's accelerometer even after we stopped using the Live Wallpaper. We fixed that by making sure that once the Live Wallpaper is no longer in use, it stops using the accelerometer so this should help with battery life.</p>
+<p>Finally, the Rotate Live Wallpaper works properly now. As we were fixing the issue with rotating the device breaking the Live Wallpaper, we saw that the rotated images had a&nbsp;black background added to them&nbsp;when they were rotated.&nbsp;This looked terrible so we fixed it by reworking parts of the Rotate Live Wallpaper so that the original image remains untouched - see below.</p>
+<p><img class="size-full wp-image-702" src="/assets/images/content/post-2016-01-10-clwc-3-3-preview-2-rotate-live-wallpaper-fixed-img-1.png" alt="Before and after preview of the Rotate Live Wallpaper" width="450" height="335" /></p>
+<p>&nbsp;</p>
+<p>As ever you can download the <a href="{{ site.baseurl }}/next-release-preview/">preview version of CLWC here</a>, and if you can please do leave us some feedback below as this helps us improve CLWC.</p>

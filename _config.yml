@@ -1,0 +1,12 @@
+baseurl: https://www.customlivewallpapercreator.com
+name: Custom Live Wallpaper Creator
+description: CLWC is designed to be as user friendly as possible, therefore anyone regardless of their technical ability is able to create their very own Live Wallpaper with a few simple clicks.
+logo: /assets/images/logo.png
+excerpt_separator: <!--more-->
+plugins: [jekyll-sitemap, jekyll-seo-tag]
+facebook:
+  publisher: https://www.facebook.com/CustomLiveWallpaperCreator
+social:
+  name: Custom Live Wallpaper Creator
+  links:
+    - https://www.facebook.com/CustomLiveWallpaperCreator

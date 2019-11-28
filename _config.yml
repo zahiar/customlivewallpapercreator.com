@@ -4,9 +4,3 @@ description: CLWC is designed to be as user friendly as possible, therefore anyo
 logo: /assets/images/logo.png
 excerpt_separator: <!--more-->
 plugins: [jekyll-sitemap, jekyll-seo-tag]
-facebook:
-  publisher: https://www.facebook.com/CustomLiveWallpaperCreator
-social:
-  name: Custom Live Wallpaper Creator
-  links:
-    - https://www.facebook.com/CustomLiveWallpaperCreator
